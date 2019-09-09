@@ -181,17 +181,17 @@
 							</div>
 							<div class="patrimonio-info-side-right">
 								<ul>
-									<li><input type="text"></li>
-									<li><input type="text"></li>
-									<li><input type="text"></li>
-									<li><input type="text"></li>
-									<li><input type="text"></li>
-									<li><input type="text"></li>
-									<li><input type="text"></li>
-									<li><input type="text"></li>
-									<li><input type="text"></li>
-									<li><input type="text"></li>
-									<li><input type="text"></li>
+									<li><input type="text" id="I33" onchange="calcPatrimonio()"></li>
+									<li><input type="text" id="I34" onchange="calcPatrimonio()"></li>
+									<li><input type="text" id="I35" onchange="calcPatrimonio()"></li>
+									<li><input type="text" id="I36" onchange="calcPatrimonio()"></li>
+									<li><input type="text" id="I37" onchange="calcPatrimonio()"></li>
+									<li><input type="text" id="I38" onchange="calcPatrimonio()"></li>
+									<li><input type="text" id="I39" onchange="calcPatrimonio()"></li>
+									<li><input type="text" id="I40" onchange="calcPatrimonio()"></li>
+									<li><input type="text" id="totalPB" readonly="readonly"></li>
+									<li><input type="text" id="pasivos" onchange="calcPatrimonio()"></li>
+									<li><input type="text" id="totalPL" readonly="readonly"></li>
 								</ul>
 							</div>
 						</div>
@@ -231,17 +231,17 @@
 							</div>
 							<div class="ingresos-info-side-right">
 								<ul>
-									<li><input type="text"></li>
-									<li><input type="text"></li>
-									<li><input type="text"></li>
-									<li><input type="text"></li>
-									<li><input type="text"></li>
-									<li><input type="text"></li>
-									<li><input type="text"></li>
-									<li><input type="text"></li>
-									<li><input type="text"></li>
-									<li><input type="text"></li>
-									<li><input type="text"></li>
+									<li><input type="text" id="I44" onchange="calcIngresos()"></li>
+									<li><input type="text" id="I45" onchange="calcIngresos()"></li>
+									<li><input type="text" id="I46" onchange="calcIngresos()"></li>
+									<li><input type="text" id="I47" onchange="calcIngresos()" onchange="calcRenta()" onchange="perdidaLiquida()"></li>
+									<li><input type="text" id="I48" onchange="calcIngresos()" onchange="calcRenta()" onchange="perdidaLiquida()"></li>
+									<li><input type="text" id="I49" onchange="calcIngresos()"></li>
+									<li><input type="text" id="I50" readonly="readonly"></li>
+									<li><input type="text" id="I51" onchange="calcIngresos()"></li>
+									<li><input type="text" id="I52" onchange="calcIngresos()"></li>
+									<li><input type="text" id="I53" onchange="calcIngresos()" onchange="calcRenta()" onchange="perdidaLiquida()"></li>
+									<li><input type="text" id="I54" readonly="readonly" onchange="calcRenta()" onchange="perdidaLiquida()"></li>
 								</ul>
 							</div>
 						</div>
@@ -256,7 +256,7 @@
 									<li>Gastos de distribución y ventas</li>
 									<li>Gastos financieros</li>
 									<li>Otros gastos y deducciones</li>
-									<li>Total costos y gastos deducibles (sume 55 a 59)</li>
+									<li><span><b>Total costos y gastos deducibles</b> (sume 55 a 59)</span></li>
 								</ul>
 							</div>
 							<div class="cost-info-side-middle">
@@ -271,12 +271,12 @@
 							</div>
 							<div class="cost-info-side-right">
 								<ul>
-									<li><input type="text"></li>
-									<li><input type="text"></li>
-									<li><input type="text"></li>
-									<li><input type="text"></li>
-									<li><input type="text"></li>
-									<li><input type="text"></li>
+									<li><input type="text" id="I55" onchange="calcCostos()"></li>
+									<li><input type="text" id="I56" onchange="calcCostos()"></li>
+									<li><input type="text" id="I57" onchange="calcCostos()"></li>
+									<li><input type="text" id="I58" onchange="calcCostos()"></li>
+									<li><input type="text" id="I59" onchange="calcCostos()"></li>
+									<li><input type="text" id="I60" readonly="readonly" onchange="calcRenta()" onchange="perdidaLiquida()"></li>
 								</ul>
 							</div>
 						</div>
@@ -298,8 +298,8 @@
 							</div>
 							<div class="esal-info-side-right">
 								<ul>
-									<li><input type="text"></li>
-									<li><input type="text"></li>
+									<li><input type="text" id="I61" onchange="calcRenta()" value="0" onchange="perdidaLiquida()"></li>
+									<li><input type="text" id="I62" onchange="calcRenta()" value="0" onchange="perdidaLiquida()"></li>
 								</ul>
 							</div>
 						</div>
@@ -313,28 +313,28 @@
 									<li>Renta líquida ordinaria del ejercicio sin casillas 47 y 48 (53 + 54 + 62 + 63 - 47 - 48 - 60 - 61)</li>
 									<li>Pérdida líquida del ejercicio sin casilla 47 y 48 (60 + 61 + 48 + 47 - 53 - 54 - 62 - 63)</li>
 									<li>Compensaciones</li>
-									<li>Renta líquida sin casilla 47 y 48 (64 - 66)</li>
+									<li><span><b>Renta líquida sin casilla 47 y 48</b> (64 - 66)</span> </li>
 									<li>Renta presuntiva</li>
 								</ul>
 							</div>
 							<div class="renta-info-side-middle">
 								<ul>
 									<li>63</li>
-									<li>64</li>
+									<li><b>64</b></li>
 									<li>65</li>
 									<li>66</li>
-									<li>67</li>
+									<li><b>67</b></li>
 									<li>68</li>
 								</ul>
 							</div>
 							<div class="renta-info-side-right">
 								<ul>
-									<li><input type="text"></li>
-									<li><input type="text"></li>
-									<li><input type="text"></li>
-									<li><input type="text"></li>
-									<li><input type="text"></li>
-									<li><input type="text"></li>
+									<li><input type="text" id="I63" onchange="calcRenta()" value="0" onchange="perdidaLiquida()"></li>
+									<li onclick="calcRenta()"><input type="text" id="I64" readonly="readonly"></li>
+									<li onclick="perdidaLiquida()"><input type="text" id="I65" readonly="readonly"></li>
+									<li><input type="text" id="I66"></li>
+									<li onclick="rentaLiquida()"><input type="text" id="I67" readonly="readonly"></li>
+									<li><input type="text" id="I68"></li>
 								</ul>
 							</div>
 						</div>
@@ -366,12 +366,12 @@
 							</div>
 							<div class="cont-renta-info-side-right">
 								<ul>
-									<li><input type="text"></li>
-									<li><input type="text"></li>
-									<li><input type="text"></li>
-									<li><input type="text"></li>
-									<li><input type="text"></li>
-									<li><input type="text"></li>
+									<li><input type="text" id="I69"></li>
+									<li><input type="text" id="I70"></li>
+									<li><input type="text" id="I71"></li>
+									<li><input type="text" id="I72"></li>
+									<li><input type="text" id="I73"></li>
+									<li><input type="text" id="I74"></li>
 								</ul>
 							</div>
 						</div>
@@ -384,7 +384,7 @@
 									<li>Ingresos por ganancias ocasionales</li>
 									<li>Costos por ganancias ocasionales</li>
 									<li>Ganancias ocasionales no gravadas y exentas</li>
-									<li>Ganancias ocasionales gravables (75 - 76 - 77)</li>
+									<li><span><b>Ganancias ocasionales gravables</b> (75 - 76 - 77)</span></li>
 								</ul>
 							</div>
 							<div class="ganancias-info-side-middle">
@@ -392,15 +392,15 @@
 									<li>75</li>
 									<li>76</li>
 									<li>77</li>
-									<li>78</li>
+									<li><b>78</b></li>
 								</ul>
 							</div>
 							<div class="ganancias-info-side-right">
 								<ul>
-									<li><input type="text"></li>
-									<li><input type="text"></li>
-									<li><input type="text"></li>
-									<li><input type="text"></li>
+									<li><input type="text" id="I75" onchange="gananciasOcasionales()"></li>
+									<li><input type="text" id="I76" onchange="gananciasOcasionales()"></li>
+									<li><input type="text" id="I77" onchange="gananciasOcasionales()"></li>
+									<li onclick="gananciasOcasionales()"><input type="text" id="I78" readonly="readonly"></li>
 								</ul>
 							</div>
 						</div>
@@ -410,31 +410,31 @@
 						<div class="liquidacion-container-info">
 							<div class="liquidacion-info-side-left">
 								<ul class="first-liquidacion-info-side-left">
-									<li>Impuesto sobre la renta líquida gravable</li>
+									<li><span><b>Impuesto sobre la renta líquida gravable</b></span></li>
 									<li>Descuentos tributarios</li>
-									<li>Impuesto neto de renta (79 - 80)</li>
+									<li><span><b>Impuesto neto de renta</b> (79 - 80)</span></li>
 									<li>Sobretasa</li>
 									<li>Impuesto de ganancias ocasionales</li>
 									<li>Descuento por impuestos pagados en el exterior por ganancias ocasionales</li>
 									<li>Impuesto dividendos gravados a la tarifa del 5%</li>
 									<li>Impuesto dividendos gravados a la tarifa del 35%</li>
 									<li>Impuesto dividendos gravados a la tarifa del 33%</li>
-									<li>Total impuesto a cargo (81 + 82 + 83 + 85 + 86 +87 - 84)</li>
-									<li>Valor inversion obras por impuestos hasta del 50% del valor de la casilla 88 (Modalidad de pago 1)</li>
-									<li>Descuento efectivo inversión obras por impuestos (Modalidad de pago 2)</li>
+									<li><span><b>Total impuesto a cargo</b> (81 + 82 + 83 + 85 + 86 +87 - 84)</span></li>
+									<li><span>Valor inversion obras por impuestos hasta del 50% del valor de la casilla 88 <b>(Modalidad de pago 1)</b></span></li>
+									<li><span>Descuento efectivo inversión obras por impuestos <b>(Modalidad de pago 2)</b></span></li>
 									<li>Anticipo renta liquidado año gravable anterior</li>
 									<li>Anticipo sobretasa liquidado año gravable anterior</li>
 									<li>Saldo a favor año gravable anterior sin solicitud de devolución y/o compensación</li>
 									<li>Autorretenciones</li>
 									<li>Otras retenciones</li>
-									<li>Total retenciones año gravable a declarar (94 + 95)</li>
+									<li><span><b>Total retenciones año gravable a declarar</b> (94 + 95)</span></li>
 								</ul>
 								<ul class="second-liquidacion-info-side-left">
 									<li>Anticipo renta para el año gravable siguiente</li>
-									<li>Saldo a pagar por impuesto (88 + 97 - 89 - 90 - 91 - 92 - 93 - 96)</li>
+									<li><span><b>Saldo a pagar por impuesto</b> (88 + 97 - 89 - 90 - 91 - 92 - 93 - 96)</span></li>
 									<li>Sanciones</li>
-									<li>Total saldo a pagar (88 + 97 + 99 - 89 - 90 - 91 - 92 - 93 - 96)</li>
-									<li>Total saldo a favor (89 + 90 + 91 + 92 + 93 + 96 - 88 - 97 - 99)</li>
+									<li><span><b>Total saldo a pagar</b> (88 + 97 + 99 - 89 - 90 - 91 - 92 - 93 - 96)</span></li>
+									<li><span><b>Total saldo a favor</b> (89 + 90 + 91 + 92 + 93 + 96 - 88 - 97 - 99)</span></li>
 								</ul>
 								<ul class="third-liquidacion-info-side-left">
 									<li>Valor impuesto exigible por obras por impuestos modalidad de pago 1</li>
@@ -443,7 +443,7 @@
 							</div>
 							<div class="liquidacion-info-side-middle">
 								<ul class="first-liquidacion-info-side-middle">
-									<li>79</li>
+									<li><b>79</b></li>
 									<li>80</li>
 									<li>81</li>
 									<li>82</li>
@@ -452,7 +452,7 @@
 									<li>85</li>
 									<li>86</li>
 									<li>87</li>
-									<li>88</li>
+									<li><b>88</b></li>
 									<li>89</li>
 									<li>90</li>
 									<li>91</li>
@@ -460,14 +460,14 @@
 									<li>93</li>
 									<li>94</li>
 									<li>95</li>
-									<li>96</li>
+									<li><b>96</b></li>
 								</ul>
 								<ul class="second-liquidacion-info-side-middle">
 									<li>97</li>
-									<li>98</li>
+									<li><b>98</b></li>
 									<li>99</li>
-									<li>100</li>
-									<li>101</li>
+									<li><b>100</b></li>
+									<li><b>101</b></li>
 								</ul>
 								<ul class="third-liquidacion-info-side-middle">
 									<li>102</li>
@@ -476,35 +476,35 @@
 							</div>
 							<div class="liquidacion-info-side-right">
 								<ul class="first-liquidacion-info-side-right">
-									<li><input type="text"></li>
-									<li><input type="text"></li>
-									<li><input type="text"></li>
-									<li><input type="text"></li>
-									<li><input type="text"></li>
-									<li><input type="text"></li>
-									<li><input type="text"></li>
-									<li><input type="text"></li>
-									<li><input type="text"></li>
-									<li><input type="text"></li>
-									<li><input type="text"></li>
-									<li><input type="text"></li>
-									<li><input type="text"></li>
-									<li><input type="text"></li>
-									<li><input type="text"></li>
-									<li><input type="text"></li>
-									<li><input type="text"></li>
-									<li><input type="text"></li>
+									<li><input type="text" id="I79" onchange="impuestoNetoRenta()"></li>
+									<li><input type="text" id="I80" onchange="impuestoNetoRenta()"></li>
+									<li><input type="text" id="I81" onchange="totalImpuesto()" readonly="readonly"></li>
+									<li><input type="text" id="I82" onchange="totalImpuesto()"></li>
+									<li><input type="text" id="I83" onchange="totalImpuesto()"></li>
+									<li><input type="text" id="I84" onchange="totalImpuesto()"></li>
+									<li><input type="text" id="I85" onchange="totalImpuesto()"></li>
+									<li><input type="text" id="I86" onchange="totalImpuesto()"></li>
+									<li><input type="text" id="I87" onchange="totalImpuesto()"></li>
+									<li><input type="text" id="I88" readonly="readonly"></li>
+									<li><input type="text" id="I89"></li>
+									<li><input type="text" id="I90"></li>
+									<li><input type="text" id="I91"></li>
+									<li><input type="text" id="I92"></li>
+									<li><input type="text" id="I93"></li>
+									<li><input type="text" id="I94"></li>
+									<li><input type="text" id="I95"></li>
+									<li><input type="text" id="I96"></li>
 								</ul>
 								<ul class="second-liquidacion-info-side-right">
-									<li><input type="text"></li>
-									<li><input type="text"></li>
-									<li><input type="text"></li>
-									<li><input type="text"></li>
-									<li><input type="text"></li>
+									<li><input type="text" id="I97"></li>
+									<li><input type="text" id="I98"></li>
+									<li><input type="text" id="I99"></li>
+									<li><input type="text" id="I100"></li>
+									<li><input type="text" id="I101"></li>
 								</ul>
 								<ul class="third-liquidacion-info-side-right">
-									<li><input type="text"></li>
-									<li><input type="text"></li>
+									<li><input type="text" id="I102"></li>
+									<li><input type="text" id="I103"></li>
 								</ul>
 							</div>
 						</div>
@@ -542,8 +542,23 @@
 					</div>
 					<div class="right-footer-left">997. Espacio exclusivo para el sello de la entidad recaudadora</div>
 				</div>
-				<div class="footer-right">aa</div>
+				<div class="footer-right">
+					<div class="footer-rigth-top">
+						<div class="footer-rigth-top-one">
+							<span><b>980. Pago total$</b></span>
+						</div>
+						<div class="footer-rigth-top-two">
+							<div class="row"></div>
+						</div>
+					</div>
+					<div class="footer-rigth-botton">
+						<div class="footer-rigth-botton-text">
+							<img src="./DianAdd.png">
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
+		<script src="script.js"></script>
 	</body>
 </html>

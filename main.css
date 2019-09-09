@@ -11,6 +11,8 @@ body {
 .container {
 	border: 1px solid green;
 	width: 100%;
+	max-width: 1300px;
+	margin: 0 auto;
 }
 .head {
 	display: flex;
@@ -276,7 +278,7 @@ body {
 .after-declarant-data-one {
 	display: flex;
 	align-items: center;
-	margin-right: 23px;
+	margin-right: 18px;
 }
 .after-declarant-data-one span {
 	margin-left: 6px;
@@ -291,7 +293,7 @@ body {
 .after-declarant-data-two {
 	display: flex;
 	align-items: center;
-	margin-right: 23px;
+	margin-right: 18px;
 }
 .after-declarant-data-two span {
 	margin-left: 6px;
@@ -306,7 +308,7 @@ body {
 .after-declarant-data-three {
 	display: flex;
 	align-items: center;
-	margin-right: 23px;
+	margin-right: 18px;
 }
 .after-declarant-data-three span{
 	margin-left: 6px;
@@ -1054,7 +1056,7 @@ body {
 }
 
 .footer-left {
-	width: 58%;
+	width: 65%;
 	/* background-color: blue; */
 	height: auto;
 	display: flex;
@@ -1122,9 +1124,11 @@ body {
 }
 .cod-contador-firma span:nth-child(1) {
 	margin-left: 10px;
+	letter-spacing: -.3px;
 }
 .cod-contador-firma span:nth-child(2) {
 	margin-left: 10px;
+	letter-spacing: -.3px;
 }
 .cod-contador-firma span:nth-child(3) {
 	margin-left: 5px;
@@ -1140,12 +1144,47 @@ body {
 	/* background-color: palevioletred; */
 	height: auto;
 	font-weight: 600;
-	letter-spacing: -.2px;
+	letter-spacing: -.4px;
 	margin-left: 3px;
 }
 
 
 .footer-right {
 	width: 42%;
-	background-color: red;
+	/* padding-top: 20px; */
+	border-left: 1px solid green;
+	
+}
+
+.footer-rigth-top {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 20px;
+	padding-bottom: 20px; 
+	border-bottom: 1px solid green;
+	background-color: #eee
+}
+.footer-rigth-top-one{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50%;
+}
+.footer-rigth-top-two{
+	width: 100%;
+}
+.footer-rigth-top-two .row {
+	border: 1px solid green;
+	width: 90%;
+	height: 45px;
+	background-color: white;
+}
+
+.footer-rigth-botton-text {
+	width: 100%;
+}
+.footer-rigth-botton-text img {
+	width: 100%;
+	height: auto;
 }
