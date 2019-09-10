@@ -1188,3 +1188,10 @@ body {
 	width: 100%;
 	height: auto;
 }
+
+input {
+	background-color: transparent;
+	text-align: end;
+	width: 100%;
+	padding-right: 20px;
+}

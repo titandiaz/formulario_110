@@ -9,7 +9,7 @@ function calcPatrimonio() {
     suma += parseInt(inputsP[i].value)
     if (Number(suma)) {
       document.getElementById("totalPB").value = suma;
-    }
+    } 
   }
   const totalPB = document.getElementById("totalPB").value
   document.getElementById("totalPL").value = totalPB - document.getElementById("pasivos").value
